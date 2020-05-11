@@ -16,5 +16,5 @@ add_library(PROJECTNAME INTERFACE)
 target_include_directories(PROJECTNAME INTERFACE ${CMAKE_SOURCE_DIR}/include/)
 
 if(BUILD_TESTING)
-    add_subdirectory(test)
+    add_subdirectory(tests)
 endif()
