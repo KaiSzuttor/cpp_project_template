@@ -12,9 +12,5 @@ set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_SOURCE_DIR}/cmake")
 enable_testing()
 option(BUILD_TESTING "Build tests" ON)
 
-add_library(PROJECTNAME INTERFACE)
-target_include_directories(PROJECTNAME INTERFACE ${CMAKE_SOURCE_DIR}/include/)
-
-if(BUILD_TESTING)
-    add_subdirectory(tests)
-endif()
+add_subdirectory(external)
+add_subdirectory(src)
