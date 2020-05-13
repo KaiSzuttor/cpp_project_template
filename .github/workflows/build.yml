@@ -1,0 +1,22 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  build_and_test:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - name: Configure
+      run: |
+          mkdir build && cd build && cmake ..
+    - name: Build
+      working-directory: build
+      run: |
+          make
+    - name: Test
+      working-directory: build
+      run: |
+          make test
