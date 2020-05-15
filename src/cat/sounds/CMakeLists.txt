@@ -3,6 +3,7 @@ target_include_directories(meow
     PUBLIC 
         $<INSTALL_INTERFACE:include>    
         $<BUILD_INTERFACE:${PROJECT_SOURCE_DIR}/include>)
+target_link_libraries(meow PUBLIC project_properties project_warnings)
 
 if (CMAKE_PROJECT_NAME STREQUAL PROJECT_NAME AND BUILD_TESTING)
   add_executable(meow_test meow.test.cpp)
