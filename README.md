@@ -12,10 +12,15 @@ Build status: ![CI](https://github.com/KaiSzuttor/cpp_project_template/workflows
 * Sample configurations for:
   * [clang-tidy](https://clang.llvm.org/extra/clang-tidy/)
   * [clang-format](https://clang.llvm.org/docs/ClangFormat.html)
-* Sample .gitignore file (generated with a useful online tool [gitignore.io](http://gitignore.io)
+* Sample .gitignore file (generated with a useful online tool [gitignore.io](http://gitignore.io))
 * License header template in `data/header_template.txt`
 * Tools for license header updating: `tools/license_headers.py`, that can be used like e.g. this:
   
   ``` bash
   ./tools/license_headers.py -y 2020 -t data/header_template.txt -o 'Kai Szuttor' -n 'CPP Project Template' -u 'https://github.com/kaiszuttor/cpp_project_template' -x tools
   ```
+* CMake support for:
+  * [Doxygen](http://www.doxygen.nl)
+  * [clang-tidy](https://clang.llvm.org/extra/clang-tidy)
+  * [cppcheck](https://github.com/danmar/cppcheck)
+  * [ccache](https://ccache.dev)
