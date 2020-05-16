@@ -17,12 +17,31 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
+#ifndef CAT_SOUNDS_MEOW_HPP
+#define CAT_SOUNDS_MEOW_HPP
+
 #include <string>
 
-namespace Cat {
-  namespace Sounds {
-    std::string meow() {
-      return "meow!";
-    }
-  }
+#pragma once
+#include <string>
+#include "Mamals/Mamals.h"
+
+namespace Mamals
+{
+namespace Felinae
+{
+
+/**
+ * A Cat meows
+ */
+class Cat: public IMamal
+{
+public:
+  std::string meow();
+  inline MamalId GetMamalId() { return MamalId::Cat; };
+};
 }
+
+}
+
+#endif

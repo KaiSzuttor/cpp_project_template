@@ -17,15 +17,13 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-#ifndef CAT_SOUNDS_MEOW_HPP
-#define CAT_SOUNDS_MEOW_HPP
+#include <doctest/doctest.h>
+#include <iostream> // toolchain issues on osx: https://github.com/onqtam/doctest/issues/356
 
-#include <string>
+#include "Mamals/Canidae/dog.h"
 
-namespace Cat {
-  namespace Sounds {
-    std::string meow();
-  }
+TEST_CASE( "bark" ) {
+  using namespace Mamals::Canidae;
+  Dog dog;
+      REQUIRE( dog.bark() == "Wof" );
 }
-
-#endif

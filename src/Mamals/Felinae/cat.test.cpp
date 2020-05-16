@@ -20,8 +20,10 @@
 #include <doctest/doctest.h>
 #include <iostream> // toolchain issues on osx: https://github.com/onqtam/doctest/issues/356
 
-#include "cat/sounds/meow.hpp"
+#include "Mamals/Felinae/cat.hpp"
 
 TEST_CASE( "meow" ) {
-    REQUIRE( Cat::Sounds::meow() == "meow!" );
+    using namespace Mamals::Felinae;
+    Cat cat;
+    REQUIRE( cat.meow() == "meow!" );
 }
