@@ -24,3 +24,7 @@ Build status: ![CI](https://github.com/KaiSzuttor/cpp_project_template/workflows
   * [clang-tidy](https://clang.llvm.org/extra/clang-tidy)
   * [cppcheck](https://github.com/danmar/cppcheck)
   * [ccache](https://ccache.dev)
+  
+* [Nice and searchable Docs](https://pthom-cpp-project-template.readthedocs.io/en/latest/) 
+with a format resembling the [fmtlib](https://fmt.dev/latest/index.html) documentation
+   

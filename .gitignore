@@ -559,3 +559,5 @@ healthchecksdb
 MigrationBackup/
 
 # End of https://www.gitignore.io/api/c++,linux,clion,qtcreator,visualstudio,visualstudiocode,xcode
+
+.idea

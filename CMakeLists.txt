@@ -32,3 +32,11 @@ endif()
 
 add_subdirectory(external)
 add_subdirectory(src)
+
+# Docs options (the docs use Sphinx: see docs/index.rst)
+option(BUILD_DOCS "Build docs" OFF)
+# You can exclude the docs from "make all"
+option(BUILD_DOCS_EXCLUDE_FROM_ALL "Build docs, but exclude them from 'build all'" OFF)
+if (BUILD_DOCS)
+    add_subdirectory(docs)
+endif()
