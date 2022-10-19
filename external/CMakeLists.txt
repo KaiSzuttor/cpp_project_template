@@ -1,2 +1,2 @@
-add_library(doctest INTERFACE)
-target_include_directories(doctest SYSTEM INTERFACE ${CMAKE_CURRENT_SOURCE_DIR}/doctest/include/)
+add_library(catch2 INTERFACE)
+target_include_directories(catch2 SYSTEM INTERFACE ${CMAKE_CURRENT_SOURCE_DIR}/catch2/include/)
