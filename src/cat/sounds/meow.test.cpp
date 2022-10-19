@@ -17,8 +17,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-#include <doctest/doctest.h>
-#include <iostream> // toolchain issues on osx: https://github.com/onqtam/doctest/issues/356
+#include <catch2/catch.hpp>
 
 #include "cat/sounds/meow.hpp"
 

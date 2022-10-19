@@ -7,7 +7,7 @@ Build status: ![CI](https://github.com/KaiSzuttor/cpp_project_template/workflows
 ## Features
 
 * [Github actions](https://help.github.com/en/actions) set up for continious integration
-* Uses [doctest](https://github.com/onqtam/doctest) for testing
+* Uses [catch2](https://github.com/catchorg/Catch2) for testing
 * Follows the [pitchfork project layout convention](https://api.csswg.org/bikeshed/?force=1&url=https://raw.githubusercontent.com/vector-of-bool/pitchfork/develop/data/spec.bs)
 * Sample configurations for:
   * [clang-tidy](https://clang.llvm.org/extra/clang-tidy/)
